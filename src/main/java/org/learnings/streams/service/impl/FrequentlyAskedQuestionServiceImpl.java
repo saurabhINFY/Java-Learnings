@@ -3,6 +3,7 @@ package org.learnings.streams.service.impl;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Random;
 import java.util.Set;
 import java.util.function.Function;
 import java.util.function.Predicate;
@@ -10,7 +11,6 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-import org.learnings.streams.dto.Employee;
 import org.learnings.streams.service.FrequentlyAskedQuestionService;
 
 public class FrequentlyAskedQuestionServiceImpl implements FrequentlyAskedQuestionService {
@@ -115,4 +115,30 @@ public class FrequentlyAskedQuestionServiceImpl implements FrequentlyAskedQuesti
         System.out.println(intersection);
     }
 
+    @Override
+    public void findMissingLetter() {
+        String input = "Saurabh Shrijan"; // []
+        Set<String> englishAlphabets = IntStream.range('a', 'z')
+                .mapToObj(c -> Character.toString((char) c))
+                .collect(Collectors.toSet());
+        Set<String> keys = Arrays.stream(input.toLowerCase().replaceAll("\\s", "")
+                .split(""))
+                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
+                .keySet();
+        List<String> missingLetters = englishAlphabets.stream().filter((alphabet) -> {
+            return !keys.contains(alphabet);
+        }).toList();
+        System.out.println(missingLetters);
+        Stream.generate(() -> new Random().nextInt(100)).limit(10).forEach(System.out::println);
+    }
+
+    @Override
+    public void secondDuplicateFromList() {
+        int[] input = { 5, 3, 8, 3, 2, 1, 8, 7, 2 };
+        Set<Integer> set = new HashSet<>();
+        Arrays.stream(input).filter(ele -> !set.add(ele)).skip(1)
+                .findFirst().ifPresentOrElse(
+                        (res) -> System.out.println("second duplicate is " + res),
+                        () -> System.out.println("No Duplicates"));
+    }
 }

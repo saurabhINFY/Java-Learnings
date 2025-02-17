@@ -59,6 +59,6 @@ public class OperationFactory {
      */
     private static void commonlyAskedStremInterviewQuestion(
             FrequentlyAskedQuestionService frequentlyAskedQuestionService) {
-        frequentlyAskedQuestionService.findDuplicateElement();
+        frequentlyAskedQuestionService.secondDuplicateFromList();
     }
 }

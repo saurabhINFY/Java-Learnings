@@ -1,7 +1,8 @@
-1. Can we Override static and private methods ? 
-   1. we cannot override private method as they are only accessible inside the class
-   2. so if we write a same private method with name and return type same as parent it creates new method in child
-   3. For static methods it cannot be overridden and if we create same static method then base class static method will be hidden (method hiding)
+# FAQ
+
+1. Can we Override static and private methods ?
+   1. we cannot override private method as they are only accessible inside the class so if we write a same private method with name and return type same as parent it creates new method in child
+   2. For static methods it cannot be overridden and if we create same static method then base class static method will be hidden (method hiding)
 2. How can we make any class immutable?
    1. Declare all method as private and final.
    2. class should be final so that it cannot be extended.
@@ -12,5 +13,5 @@
    2. create a static final variable of class type and a static method.
    3. return the static field value from the above method.
 4. what is a JIT compiler?
-   1. since JVM and JRE(Interprator + JIT compiler ) are machine dependent to run the ByteCode(machine independent) on JRE only 
+   1. since JVM and JRE(Interprator + JIT compiler ) are machine dependent to run the ByteCode(machine independent) on JRE only
       interprator will slow down its performance for converting byte code to machine dependent code hence JIT compiler comes in picture.

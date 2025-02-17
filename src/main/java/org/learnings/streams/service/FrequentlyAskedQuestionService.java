@@ -1,6 +1,6 @@
 package org.learnings.streams.service;
 
-public interface FrequentlyAskedQuestionService{
+public interface FrequentlyAskedQuestionService {
 
     public void findOccurrence();
 
@@ -19,5 +19,9 @@ public interface FrequentlyAskedQuestionService{
     public void mergeTwoListIntoOne();
 
     public void intersectionOfTwoList();
+
+    public void findMissingLetter();
+
+    public void secondDuplicateFromList();
 
 }
