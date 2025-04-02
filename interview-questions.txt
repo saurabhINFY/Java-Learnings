@@ -1,0 +1,265 @@
+java 8 features that we used in old projects and questions related to them like why used static methods in interface for which purpose
+Executor services
+Optional where we used
+parameters of map,foreach,flatmap in stream
+why streams even we have for loops for each for collections
+why used foreach of streams
+Executor services
+synchorized locks,blocks
+completable future 
+bean life cycle(Inside this related to beanpostprocessor postconstruct aware interface related questions)
+spring autoconfiguration
+JVM
+Garbage collections
+Java memory management
+Solid principles and where we used in the project 
+Adapter and strategy design pattern - and why this and why not
+Apache kafka and Rabbit mq difference
+
+Coding question
+Product -> Id, Name, Category ,Price
+	Find the expensive product by name for each category if you have product list containing products
+
+Find the output for these code:
+
+
+int a=10;
+
+int b=20;
+
+int c=0;
+
+try{
+
+}catch(AE e){
+
+}catch(Exception e){
+
+}finally {
+
+int c =40;
+
+}
+
+return c;
+
+_________________________________
+
+int a=10;
+
+int b=20;
+
+int c=0;
+
+try{
+
+}catch(Exception e){
+
+}catch(AE e){
+
+}finally {
+
+int c =40;
+
+}
+
+return c;
+
+_________________________________
+
+interface a{
+
+object method throws Exception;
+
+} 
+
+Class b implements a{
+
+String method throws IOException{
+
+}
+
+}
+
+_________________________________
+
+
+interface a{
+
+String method throws Exception;
+
+} 
+
+Class b implements a{
+
+Object method throws IOException{
+
+}
+
+}
+
+_________________________________
+
+
+interface a{
+
+String method throws RuntimeException;
+
+} 
+
+Class b implements a{
+
+Object method throws IOException{
+
+}
+
+}
+
+Discussion over project
+java version, spring boot version used in project
+functinalitites of java 8 used in project
+parameters of map
+synchorized locks,blocks
+bean life cycle
+Garbage collections
+Java memory management
+clean code, code review
+ Coding question:
+We have List of Order, each order has mulitple products. Find the average price of all order place on one specific date.
+_________________________________
+
+interface a{
+String method throws RuntimeException;
+} 
+Class b implements a{
+Object method throws IOException{
+}
+}
+_________________________________ 
+Project related questions, flow, what are the technologies used
+Java memory management
+which version of java and spring boot
+GC related questions
+Optional class where you have used, which methods are available
+default and static methods
+streams and lambda expressions where you have used in your project
+where you have used 
+Kafka - where you have used, how do you consume messages
+who is responsible for configuring the kafka
+how do know unique record in kafka topic
+delivery mechanisms
+what if I want to consume exactly once 
+best practices followed while designing rest apis
+diff b/w put and patch
+idempotent in rest
+how microservices communicate each other
+write endpoint declaration to get the specific customer order details
+where do you use clean code and clean design
+_________________________________ 
+get the most expensive product name for each category
+Map<String(category), String(productName)>
+Multithreading
+Synchronised keyward and lock
+Executor framework
+CompletableFuture, what is the real use-case of this
+Executor framework vs CompletableFuture
+Hashset internally how it's works
+ _________________________________ 
+Order of execution of below statement if query contains all of these
+Select, where, group by, order by, distinct, limit, having
+what are the clean design principles you have used
+Singleton design pattern and spring singleton scope
+_________________________________ 
+
+Project related questions, flow, what are the technologies used
+
+Java memory management
+
+which version of java and spring boot
+
+GC related questions
+
+Optional class
+
+default and static methods
+
+streams and lambda expressions where you have used in your project
+
+where you have used 
+
+best practices followed while designing rest apis
+
+idempotent in rest -> what is the use of idempotency
+
+write endpoint declaration to get the specific customer order details
+
+where do you use clean code and clean design
+
+Synchronised keyword and lock
+
+Executor framework vs CompletableFuture
+
+what are the clean design principles you have used
+
+What do you follow when reviewing code
+
+bean life cycle 
+
+What happens if Singleton has Prototype object and if Prototype has Singleton obj
+
+Solid principles and where we used in the project
+_________________________________  
+
+Code -> We have an Order list with each order having multiple products.
+
+		Products have category.
+
+		Give the list of orders which have any product with category "Baby"
+
+_________________________________ 
+
+What do u observe in this code	
+
+class Discount {
+
+	public double getDiscount(String type, double amt){
+
+		if(type=="Regular"){
+
+			return amt*0.1;
+
+		} else if (type=="Extra"){
+
+			retunr amt*0.2;
+
+		} else if(type=="someType") {
+
+			return amt*0.3;
+
+		} else {
+
+			return 0;
+
+		}
+
+	}
+
+}
+_________________________________  
+
+interface a{
+
+Object method throws RuntimeException;
+
+} 
+
+Class b implements a{
+
+String method throws IOException{
+
+}
+
+}
+
+_________________________________ 
+ 
