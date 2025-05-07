@@ -6,7 +6,7 @@ interface Pizza {
     void getDescription();
 }
 
-class Marghreta implements Pizza {
+class Margherita implements Pizza {
 
     @Override
     public int getCost() {
@@ -15,7 +15,7 @@ class Marghreta implements Pizza {
 
     @Override
     public void getDescription() {
-        System.out.println("This is Marghreta Pizza");
+        System.out.println("This is Margherita Pizza");
     }
 
 }
@@ -80,16 +80,16 @@ class ThinCrustBaseDecorator extends PizzaDecorator {
 
 class Client {
     public static void main(String[] args) {
-        Marghreta marghreta = new Marghreta();
+        Margherita margherita = new Margherita();
         /*
-         * Add new decorator feature on Marghreta to make it marghreta with extra cheese
+         * Add new decorator feature on Margherita to make it margherita with extra cheese
          */
-        ExtraCheeseDecorator extraCheeseDecoratorPizza = new ExtraCheeseDecorator(marghreta);
+        ExtraCheeseDecorator extraCheeseDecoratorPizza = new ExtraCheeseDecorator(margherita);
         extraCheeseDecoratorPizza.getDescription();
         System.out.println("Total Cost of adding extra cheese: " + extraCheeseDecoratorPizza.getCost());
 
         /*
-         * Add new feature on Marghreta with extra cheese to make marghreta with extra
+         * Add new feature on Margherita with extra cheese to make margherita with extra
          * cheese with thin crust
          */
         ThinCrustBaseDecorator thinCrustBaseDecoratorPizza = new ThinCrustBaseDecorator(extraCheeseDecoratorPizza);

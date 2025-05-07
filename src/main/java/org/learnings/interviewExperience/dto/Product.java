@@ -1,7 +1,6 @@
 package org.learnings.interviewExperience.dto;
 
 /*
- * Product record 
+ * Product record
  */
-public record Product(int id, String name, String category, double price) {
-}
+public record Product(int id, String name, String category, double price) {}

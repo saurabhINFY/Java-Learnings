@@ -1,4 +1,4 @@
-package org.learnings.features.SealedClasses;
+package org.learnings.features.SealedClasses.EcommerceJava21;
 
 import java.util.Arrays;
 import java.util.List;

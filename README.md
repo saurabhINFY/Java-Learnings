@@ -37,3 +37,42 @@ Repository to practice Java Fundamental concepts
 3. SOLID principle
 4. practice problem
 5. Microservices Architecture
+
+### Mastering Core Java Concepts
+
+* Strings: Concepts, hashCode(), equals() methods, and immutability.
+
+* OOP Principles: Encapsulation, inheritance, polymorphism, abstraction.
+* Serialization: Process, use cases, and pitfalls.
+* Collection Framework: List, Set, Map, and advanced topics like Concurrent collections.
+* Exception Handling: Best practices, custom exceptions, and handling strategies.
+* Multithreading: Threads, synchronization, locks, and concurrency utilities.
+* Java Memory Model: Stack, heap, and reference types.
+* Garbage Collection: Types of collectors and performance tuning.
+
+### Exploring Java 8, 11, and 17 Features
+
+* Java 8: Lambdas, Functional Interfaces, Stream API, Optional, Default, and Static methods.
+* Java 11: String handling improvements, local variable syntax (var), and HTTP client API.
+* Java 17: Pattern matching, sealed classes, records, and text blocks.
+* Java 21: Virtual threads (Project Loom), Record patterns, Sequenced collections, String templates, and structured concurrency.
+
+### Deep Dive into Spring Framework, Spring Boot, and Microservices
+
+* Core Concepts: Dependency Injection (DI), Inversion of Control (IoC), and Spring MVC.
+* Configuration: XML, annotations, and application properties.
+* Beans: Bean lifecycle, scopes, and profiles.
+* AOP (Aspect-Oriented Programming): Use cases and implementation.
+* REST APIs: HTTP methods, exception handling, and custom error responses.
+* Spring Security: JWT, OAuth2, and authentication best practices.
+* Actuators: Monitoring and management of applications.
+* WebFlux: Reactive programming with Mono and Flux.
+* Spring Cloud: Service discovery, load balancing, and distributed tracing.
+
+### Working with Databases: Hibernate, Spring Data JPA, SQL, and NoSQL
+
+* JPA Repositories: Simplify CRUD operations with built-in methods.
+* Entity Relationships: One-to-one, one-to-many, and many-to-many mappings.
+* Advanced SQL Queries: Find nth highest salary and advanced joins.
+* Database Design: Relational vs. non-relational database concepts.
+* Optimizations: Indexing, stored procedures, and query performance tuning.

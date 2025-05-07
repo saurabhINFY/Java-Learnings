@@ -127,7 +127,7 @@ public class TestDataUtil {
                 return Arrays.asList("banana", "apple", "orange", "guava", "grapes", "blueberry");
         }
 
-        public static List<Student> perpareStudentData() {
+        public static List<Student> prepareStudentData() {
                 return Arrays.asList(
                                 new Student(1, "Rohit", "Mall", 30, "Male", Department.COMPUTER_SCIENCE.value, 2015,
                                                 City.MUMBAI.value,

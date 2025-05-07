@@ -262,4 +262,62 @@ String method throws IOException{
 }
 
 _________________________________ 
- 
+Java Questions
+Core Java
+
+What are the key differences between HashMap and ConcurrentHashMap in Java?
+How does Java handle memory management using Garbage Collection? Can you explain the different Garbage Collector types?
+What is the significance of the volatile keyword in Java? Give an example where it is useful.
+Can you explain the concept of immutability in Java? Why is String immutable and final in Java?
+How does the ThreadLocal work in Java? Can you provide a practical example?
+Java Streams and Lambda Expressions
+
+How would you use Java Streams to filter and sort a list of objects? Can you write a sample code snippet for this?
+What are the differences between map and flatMap in Streams API?
+Can you explain the concept of functional interfaces in Java? How do they tie to lambda expressions?
+Concurrency and Multithreading
+
+Can you explain the difference between Runnable and Callable interfaces? When would you use Callable over Runnable?
+What is the significance of the Fork/Join framework in Java, and how does it enable parallelism?
+What problem does the Java CompletableFuture solve, and how can you use it in asynchronous programming?
+Spring Boot Questions
+Spring Framework and Dependency Injection
+
+Can you explain the difference between @Component, @Service, @Repository, and @Controller in Spring?
+What are the different scopes available in Spring Beans? Can you give a practical example?
+How does Spring achieve Dependency Injection internally? Can you describe constructor and setter injection?
+Spring Boot Specifics
+
+How would you configure properties in a Spring Boot application? Can you explain the use of application.properties and application.yml?
+What is the purpose of @SpringBootApplication annotation? Can you break down its components?
+How does Spring Boot's auto-configuration work? What is the role of @Conditional annotations?
+Advanced Spring Questions
+
+What is the difference between @RestController and @Controller annotations in Spring Boot?
+How does the Spring Security module help secure a microservice? Can you describe how authentication and authorization work?
+How would you implement caching in a Spring Boot application? What annotations are useful for this?
+Microservices Questions
+Microservices Architecture
+
+What are the key principles of microservices architecture? How do microservices differ from monolithic applications?
+How do you achieve service-to-service communication in a microservice system? Can you explain the benefits of using REST vs gRPC?
+In the context of databases, how do microservices handle data consistency and transactions across multiple services?
+Fault Tolerance and Resilience
+
+How does Circuit Breaker pattern help in building resilient microservices? Which libraries or frameworks have you used to implement it?
+Can you explain retries and backoff strategies in microservice systems? Have you implemented them before?
+What is the significance of service discovery in microservices? How would you set it up using a tool like Eureka or Consul?
+Scaling and Observability
+
+How would you horizontally scale a microservice? What challenges arise during scaling?
+What tools and techniques do you use for monitoring and observing microservices? Have you used platforms like Prometheus, Grafana, or ELK Stack?
+Can you describe how log correlation works in microservices? Have you implemented distributed tracing with tools such as Zipkin or Jaeger?
+Scenario-Based Questions
+Problem-Solving with Java
+Suppose you have a list of students with their scores. Write a Java program that groups students by their scores (e.g., "Above Average" and "Below Average") using Java Streams.
+Spring Boot Use Case
+You need to expose an API that allows users to upload files and retrieve file metadata. How would you design this API using Spring Boot?
+Microservices Challenge
+Imagine you have three microservices: Service A, Service B, and Service C. Service A needs data from Service B and C, but Service B is experiencing downtime. How would you handle this scenario gracefully in Service A?
+Database and Transactions
+In a distributed system with microservices, how would you ensure data consistency when multiple services update related database entries simultaneously? Which approach would you take: distributed transactions, event-driven architecture, or compensating transactions?

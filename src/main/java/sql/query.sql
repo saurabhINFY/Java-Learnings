@@ -1,1 +1,0 @@
-select distinct (name,salary) FROM employee ORDER BY salary DESC LIMIT 3,1;

@@ -1,4 +1,4 @@
-package org.learnings.features.SealedClasses;
+package org.learnings.features.SealedClasses.BankingAppJava21;
 
 public class BankingAppJava21 {
     public static void main(String[] args) {
