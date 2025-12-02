@@ -35,8 +35,7 @@ public class TestDataUtil {
         public static List<Order> generateTestDataForOrder(List<Product> products) {
                 Order order1 = new Order(3001, products.subList(0, 3), "2024-04-12");
                 Order order2 = new Order(3001, products.subList(4, 6), "2025-04-23");
-                List<Order> orders = List.of(order1, order2);
-                return orders;
+            return List.of(order1, order2);
         }
 
         public static List<Employee> generateTestDataForEmployee() {
@@ -67,49 +66,49 @@ public class TestDataUtil {
                 List<Employee> employees = new ArrayList<>();
 
                 employees.add(new Employee(1, "John Doe", "Engineering", 75000,
-                                new GregorianCalendar(2019, Calendar.JANUARY, 15).getTime(), true, skills1,
+                                new GregorianCalendar(2019, Calendar.JANUARY, 15).getTime(), 10,true, skills1,
                                 certifications1));
                 employees.add(new Employee(2, "Jane Smith", "Marketing", 65000,
-                                new GregorianCalendar(2020, Calendar.MAY, 20).getTime(), true, skills4,
+                                new GregorianCalendar(2020, Calendar.MAY, 20).getTime(), 5,true, skills4,
                                 certifications3));
                 employees.add(new Employee(3, "Alice Johnson", "R&D", 90000,
-                                new GregorianCalendar(2018, Calendar.APRIL, 10).getTime(), true, skills2,
+                                new GregorianCalendar(2018, Calendar.APRIL, 10).getTime(), 7,true, skills2,
                                 certifications2));
                 employees.add(new Employee(4, "Robert Brown", "Data Science", 85000,
-                                new GregorianCalendar(2022, Calendar.FEBRUARY, 25).getTime(), false, skills3,
+                                new GregorianCalendar(2022, Calendar.FEBRUARY, 25).getTime(), 9,false, skills3,
                                 certifications1));
                 employees.add(new Employee(5, "Emily Clark", "Design", 68000,
-                                new GregorianCalendar(2021, Calendar.JUNE, 15).getTime(), true, skills5,
+                                new GregorianCalendar(2021, Calendar.JUNE, 15).getTime(), 6,true, skills5,
                                 certifications3));
                 employees.add(new Employee(6, "Michael Wilson", "HR", 60000,
-                                new GregorianCalendar(2017, Calendar.NOVEMBER, 5).getTime(), true,
+                                new GregorianCalendar(2017, Calendar.NOVEMBER, 5).getTime(), 15,true,
                                 Arrays.asList("Recruiting", "Conflict Resolution"), new HashMap<>()));
                 employees.add(new Employee(7, "Sarah Davis", "Engineering", 77000,
-                                new GregorianCalendar(2023, Calendar.JANUARY, 10).getTime(), true, skills1,
+                                new GregorianCalendar(2023, Calendar.JANUARY, 10).getTime(), 13,true, skills1,
                                 certifications1));
                 employees.add(new Employee(8, "David Martinez", "R&D", 92000,
-                                new GregorianCalendar(2020, Calendar.DECEMBER, 3).getTime(), false, skills2,
+                                new GregorianCalendar(2020, Calendar.DECEMBER, 3).getTime(), 16,false, skills2,
                                 certifications2));
                 employees.add(new Employee(9, "Jennifer Lewis", "Marketing", 63000,
-                                new GregorianCalendar(2019, Calendar.AUGUST, 12).getTime(), true, skills4,
+                                new GregorianCalendar(2019, Calendar.AUGUST, 12).getTime(), 2,true, skills4,
                                 certifications3));
                 employees.add(new Employee(10, "William Walker", "Data Science", 88000,
-                                new GregorianCalendar(2021, Calendar.MARCH, 9).getTime(), true, skills3,
+                                new GregorianCalendar(2021, Calendar.MARCH, 9).getTime(), 4,true, skills3,
                                 certifications2));
                 employees.add(new Employee(11, "Jessica Hall", "Design", 70000,
-                                new GregorianCalendar(2023, Calendar.JULY, 19).getTime(), false, skills5,
+                                new GregorianCalendar(2023, Calendar.JULY, 19).getTime(), 5,false, skills5,
                                 certifications3));
                 employees.add(new Employee(12, "Thomas Young", "Engineering", 80000,
-                                new GregorianCalendar(2016, Calendar.SEPTEMBER, 7).getTime(), true, skills1,
+                                new GregorianCalendar(2016, Calendar.SEPTEMBER, 7).getTime(), 7,true, skills1,
                                 certifications1));
                 employees.add(new Employee(13, "Linda Scott", "HR", 59000,
-                                new GregorianCalendar(2018, Calendar.OCTOBER, 27).getTime(), false,
+                                new GregorianCalendar(2018, Calendar.OCTOBER, 27).getTime(), 8,false,
                                 Arrays.asList("Employee Relations", "Payroll Management"), new HashMap<>()));
                 employees.add(new Employee(14, "Charles Hernandez", "R&D", 94000,
-                                new GregorianCalendar(2022, Calendar.MARCH, 15).getTime(), true, skills2,
+                                new GregorianCalendar(2022, Calendar.MARCH, 15).getTime(), 11,true, skills2,
                                 certifications2));
                 employees.add(new Employee(15, "Patricia Martinez", "Design", 72000,
-                                new GregorianCalendar(2017, Calendar.AUGUST, 30).getTime(), true, skills5,
+                                new GregorianCalendar(2017, Calendar.AUGUST, 30).getTime(), 4,true, skills5,
                                 certifications3));
 
                 return employees;
